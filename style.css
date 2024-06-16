@@ -1,0 +1,52 @@
+/* Estilo para centrar el reloj en la pantalla */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo del contenedor principal del reloj */
+  #face {
+    background-color: #b6b3b1;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    border: 6px solid black; /* Borde negro alrededor del reloj */
+    position: relative;
+  }
+  
+  /* Estilo común para todas las manecillas del reloj */
+  #minutes, #hour, #seconds {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: top center; /* Punto de origen para la rotación de las manecillas */
+  }
+  
+  /* Estilo de la manecilla de los segundos */
+  #seconds {
+    background-color: red;
+    height: 130px;
+    width: 2px;
+    transform: rotate(0deg); /* Inicia sin rotación */
+  }
+  
+  /* Estilo de la manecilla de la hora */
+  #hour {
+    background-color: black;
+    height: 100px;
+    width: 8px;
+    transform: rotate(0deg); /* Inicia sin rotación */
+  }
+  
+  /* Estilo de la manecilla de los minutos */
+  #minutes {
+    background-color: grey;
+    height: 120px;
+    width: 4px;
+    transform: rotate(0deg); /* Inicia sin rotación */
+  }
